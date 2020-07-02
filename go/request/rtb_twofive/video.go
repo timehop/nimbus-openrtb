@@ -10,7 +10,7 @@ import "github.com/francoispqt/gojay"
 type Video struct {
 	BidFloor       *float64 `json:"bidfloor,omitempty"       valid:"optional"`
 	CompanionAd    []Banner `json:"companionad,omitempty"    valid:"optional"`
-	CompanionType  []int    `json:"companiontype,omitempty"  valid:"optional"` //1, 2, 3 -> Static Resource, HTM Resource, iframe Resource
+	CompanionType  []int    `json:"companiontype,omitempty"  valid:"optional"` //1, 2, 3 -> Static Resource, HTML Resource, iframe Resource
 	Mimes          []string `json:"mimes,omitempty"          valid:"optional"`
 	Minduration    int      `json:"minduration"              valid:"optional"`
 	Maxduration    int      `json:"maxduration,omitempty"    valid:"optional"`
