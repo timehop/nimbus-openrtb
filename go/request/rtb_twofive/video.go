@@ -14,7 +14,7 @@ type Video struct {
 	Mimes          []string  `json:"mimes,omitempty"          valid:"optional"`
 	Minduration    int       `json:"minduration"              valid:"optional"`
 	Maxduration    int       `json:"maxduration,omitempty"    valid:"optional"`
-	Protocols      []int     `json:"protocols,omitempty"      valid:"inintarr(2|3|5|6),optional"` // 1,2,3,4,5,6,7,8,9,10 -> VAST 1.0,VAST 2.0,VAST 3.0,VAST 1.0 Wrapper,VAST 2.0 Wrapper,VAST 3.0 Wrapper,VAST 4.0,VAST 4.0 Wrapper,DAAST 1.0,DAAST 1.0 Wrapper
+	Protocols      []int     `json:"protocols,omitempty"      valid:"inintarr(2|3|5|6|7|8),optional"` // 1,2,3,4,5,6,7,8,9,10 -> VAST 1.0,VAST 2.0,VAST 3.0,VAST 1.0 Wrapper,VAST 2.0 Wrapper,VAST 3.0 Wrapper,VAST 4.0,VAST 4.0 Wrapper,DAAST 1.0,DAAST 1.0 Wrapper
 	W              int       `json:"w,omitempty"              valid:"required"`
 	H              int       `json:"h,omitempty"              valid:"required"`
 	StartDelay     int       `json:"startdelay"               valid:"optional"`
